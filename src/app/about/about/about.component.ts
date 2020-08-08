@@ -2,11 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {School} from './school-class.class'
 
 @Component({
-  template: `
-<div>
-    <h1> Hello world... </h1>
-</div>
-  `,
+  templateUrl:'./about.component.html',
   styleUrls: ['./about.component.css']
 })
 
@@ -17,7 +13,7 @@ export class AboutComponent implements OnInit {
   school : School = {
     name: "Navabharathi High School",
     marks: 494,
-    percentage: 82,
+    percentage: 0.825,
     place: "Huzurabad"
   };
 
