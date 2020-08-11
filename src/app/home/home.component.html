@@ -1,4 +1,4 @@
-<!-- <div class='row' id='bioDiv'>
+<!-- <div class='row' id='bioDiv'
     
     <div class='col-4' id='image'>
         <img src="../assets/myImage/gouru_zoom.jpg" alt="My Image with smile :-)" class="myimage">
@@ -19,8 +19,8 @@
     </div>
 
 </div> -->
-<div class='row' id='bioDiv'>
-    <div class="container z-depth-1 py-5 my-5">
+<div class='row' fxLayout="row wrap" id='bioDiv'>
+    <div class="container z-depth-1 py-5 my-5" id='myDetails'>
         <section class="mx-md-5 text-center text-lg-left">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-12">
@@ -30,7 +30,7 @@
                                 {{aboutMe}}
                             </p>
                             <div>
-                                <p style='font-size: 30px;'>{{name}}</p>
+                                <p style='font-size: 25px;'>{{name}}</p>
                                 <p>{{iDo}}</p>
                             </div>
                         </div>
@@ -46,3 +46,23 @@
         </section>
     </div>
 </div>
+
+<div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1]">
+      <mat-card class="mat-elevation-z4" >
+        <img mat-card-image src="../assets/home/design_patterns.png">
+        <!-- <mat-card-header>
+          <mat-card-title>Person {{num}}</mat-card-title>
+        </mat-card-header> -->
+        <mat-card-content>
+            <h1>Design Patterns - JAVA</h1>
+          <p>
+            Here we will be discussing about the design patterns
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color='primary'>Read More >> </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>

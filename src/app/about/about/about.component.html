@@ -1,13 +1,33 @@
-<div class='tobBar'>
-  <h1>Gouru Srinivas Reddy</h1>
+
+<div class='row' fxLayout="row wrap" id='bioDiv'>
+  <div class="container z-depth-1 py-5 my-5" id='myDetails'>
+      <section class="mx-md-5 text-center text-lg-left">
+          <div class="row d-flex justify-content-center">
+              <div class="col-md-12">
+                  <div class="row p-5">
+                      <div class="col-lg-8 d-flex flex-column justify-content-between" style="margin: 0em !important; padding: 0em !important;">
+                        <p class="text-muted mb-4" style='color:white !important; line-height: 1.5em; font-size: 16px;'>
+                          {{aboutMe}}
+                      </p>
+                      <div>
+                        <h1>Gouru Srinivas Reddy</h1>
+                      </div>
+                      </div>
+                      <div class="col-lg-4 d-flex mb-2 align-items-center">
+                          <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
+                              <img [src]="myImage" class="rounded-circle img-fluid z-depth-1"
+                                  alt="woman avatar">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
 </div>
 <div class="aboutpage container p-3 my-5 border">
   <div class='container'>
     <ngb-tabset type="pills" justify="fill">
-      <ngb-tab title="Just About Me - (JAM)">
-        <ng-template ngbTabContent>
-        </ng-template>
-      </ngb-tab>
       <ngb-tab title="My Education">
         <ng-template ngbTabContent>
           <hr>
@@ -173,15 +193,6 @@
 
           </ngb-accordion>
 
-        </ng-template>
-      </ngb-tab>
-      <ngb-tab>
-        <ng-template ngbTabTitle>Wanna see me</ng-template>
-        <ng-template ngbTabContent>
-          <hr>
-          <div class='myImage'>
-            <img src="../assets/myImage/gouru.jpg" class="myimage">
-          </div>
         </ng-template>
       </ngb-tab>
     </ngb-tabset>

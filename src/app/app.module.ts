@@ -9,7 +9,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AboutComponent } from './about/about/about.component';
 import { JavaComponent } from './java/java.component';
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatCardModule } from "@angular/material/card";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatButtonModule } from "@angular/material/button";
+
 
 
 @NgModule({
@@ -23,12 +28,12 @@ import { HomeComponent } from './home/home.component'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot([
-      {path: 'bio', component:AboutComponent},
-      {path: 'home', component:HomeComponent}
-    ]),
     NgbModule,
-    MDBBootstrapModule
+    MDBBootstrapModule,
+    FlexLayoutModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

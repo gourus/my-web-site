@@ -2,11 +2,16 @@
 #bioDiv {
     margin-top:-45px;
     width: auto;
-    height: 30rem;
+    min-height: 10rem;
     padding-bottom: 40px;
     position: relative;
     background-color: #1976d2;
-    color: hsla(0,0%,100%,.95) !important;   
+    color: hsla(0,0%,100%,.95) !important;  
+    padding: 0; 
+}
+
+#myDetails {
+    margin-bottom: 0px !important;
 }
 
 @media (max-width:600px){
@@ -42,6 +47,16 @@
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)!important;
     
     
+}
+
+mat-toolbar {
+    justify-content: space-between;
+}
+.content {
+    padding: 16px;
+}
+.content > mat-card {
+    margin-bottom: 16px;
 }
 
 #nameAndDisc {
